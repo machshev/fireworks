@@ -1,0 +1,12 @@
+[package]
+edition = "2021"
+#rust-version = "1.59"
+name = "fireworks"
+version = "0.1.0"
+authors = ["James McCorrie <david@machshev.co.uk>"]
+
+[dependencies]
+stm32f1xx-hal = { version = "0.6.1", features = ["rt", "stm32f103", "medium" ] }
+cortex-m = "^0.6.2"
+cortex-m-rt = { version = "^0.6.11", features = ["device"] }
+panic-semihosting = "0.5.2"
